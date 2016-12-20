@@ -65,8 +65,8 @@
 				按照sortStr变量排序
 				正反有reverseData来决定，如果为true，则为正序，反之为倒叙
 			-->
-			<!--<tr ng-repeat = "user in users | orderBy:sortStr:reverseData | filter:searchText">
-				全局搜索，每一个字段都会进行搜索
+			<tr ng-repeat = "user in users | orderBy:sortStr:reverseData | filter:searchText">
+				<!--全局搜索，每一个字段都会进行搜索
 			-->
 			<!--<tr ng-repeat = "user in users | orderBy:sortStr:reverseData | filter:{firstName:searchText}">
 				单个字段搜索
